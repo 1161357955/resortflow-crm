@@ -1,0 +1,93 @@
+{
+  "name": "Reservation",
+  "type": "object",
+  "properties": {
+    "guest_id": {
+      "type": "string"
+    },
+    "guest_name": {
+      "type": "string"
+    },
+    "guest_phone": {
+      "type": "string"
+    },
+    "unit_id": {
+      "type": "string"
+    },
+    "unit_name": {
+      "type": "string"
+    },
+    "check_in": {
+      "type": "string",
+      "format": "date"
+    },
+    "check_out": {
+      "type": "string",
+      "format": "date"
+    },
+    "nights": {
+      "type": "number"
+    },
+    "adults": {
+      "type": "number",
+      "default": 1
+    },
+    "children": {
+      "type": "number",
+      "default": 0
+    },
+    "total_price": {
+      "type": "number"
+    },
+    "paid_amount": {
+      "type": "number",
+      "default": 0
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "\u0645\u0624\u0643\u062f",
+        "\u0642\u064a\u062f \u0627\u0644\u0627\u0646\u062a\u0638\u0627\u0631",
+        "\u062a\u0645 \u0627\u0644\u0648\u0635\u0648\u0644",
+        "\u0645\u063a\u0627\u062f\u0631\u0629",
+        "\u0645\u0644\u063a\u064a"
+      ],
+      "default": "\u0642\u064a\u062f \u0627\u0644\u0627\u0646\u062a\u0638\u0627\u0631"
+    },
+    "payment_method": {
+      "type": "string",
+      "enum": [
+        "\u0646\u0642\u062f\u064a",
+        "\u0628\u0637\u0627\u0642\u0629",
+        "\u062a\u062d\u0648\u064a\u0644 \u0628\u0646\u0643\u064a",
+        "\u0623\u062e\u0631\u0649"
+      ]
+    },
+    "source": {
+      "type": "string",
+      "enum": [
+        "\u0645\u0628\u0627\u0634\u0631",
+        "\u0647\u0627\u062a\u0641",
+        "\u0645\u0648\u0642\u0639 \u0625\u0644\u0643\u062a\u0631\u0648\u0646\u064a",
+        "\u0628\u0648\u0643\u064a\u0646\u0642",
+        "\u0623\u062e\u0631\u0649"
+      ],
+      "default": "\u0645\u0628\u0627\u0634\u0631"
+    },
+    "special_requests": {
+      "type": "string"
+    },
+    "notes": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "guest_name",
+    "guest_phone",
+    "unit_id",
+    "unit_name",
+    "check_in",
+    "check_out",
+    "total_price"
+  ]
+}
