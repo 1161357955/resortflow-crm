@@ -10,7 +10,8 @@ import {
   LogOut,
   Menu,
   X,
-  Palmtree
+  Palmtree,
+  CalendarRange
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
@@ -20,6 +21,7 @@ const navItems = [
   { label: "الحجوزات", path: "/reservations", icon: CalendarDays },
   { label: "الوحدات", path: "/units", icon: Hotel },
   { label: "المكالمات", path: "/calls", icon: Phone },
+  { label: "التقويم", path: "/calendar", icon: CalendarRange },
 ];
 
 export default function AppLayout() {

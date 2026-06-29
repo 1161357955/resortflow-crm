@@ -17,6 +17,7 @@ import Guests from '@/pages/Guests';
 import Units from '@/pages/Units';
 import Reservations from '@/pages/Reservations';
 import Calls from '@/pages/Calls';
+import CalendarPage from '@/pages/Calendar';
 import GuestPortal from '@/pages/GuestPortal';
 
 const AuthenticatedApp = () => {
@@ -57,6 +58,7 @@ const AuthenticatedApp = () => {
           <Route path="/units" element={<Units />} />
           <Route path="/reservations" element={<Reservations />} />
           <Route path="/calls" element={<Calls />} />
+          <Route path="/calendar" element={<CalendarPage />} />
         </Route>
       </Route>
       <Route path="*" element={<PageNotFound />} />
