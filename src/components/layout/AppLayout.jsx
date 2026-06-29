@@ -6,6 +6,7 @@ import {
   Users,
   CalendarDays,
   Hotel,
+  Phone,
   LogOut,
   Menu,
   X,
@@ -18,6 +19,7 @@ const navItems = [
   { label: "الضيوف", path: "/guests", icon: Users },
   { label: "الحجوزات", path: "/reservations", icon: CalendarDays },
   { label: "الوحدات", path: "/units", icon: Hotel },
+  { label: "المكالمات", path: "/calls", icon: Phone },
 ];
 
 export default function AppLayout() {
