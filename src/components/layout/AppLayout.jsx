@@ -36,7 +36,7 @@ export default function AppLayout() {
       <div className="lg:hidden fixed top-0 right-0 left-0 z-50 bg-white/80 backdrop-blur-xl border-b border-stone-200/60 px-4 h-14 flex items-center justify-between">
         <div className="flex items-center gap-2">
           <Palmtree className="w-6 h-6 text-amber-600" />
-          <span className="font-heading font-bold text-stone-800">المنتجع</span>
+          <span className="font-heading font-bold text-stone-800">رحائل</span>
         </div>
         <Button variant="ghost" size="icon" onClick={() => setSidebarOpen(!sidebarOpen)}>
           {sidebarOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
@@ -58,8 +58,8 @@ export default function AppLayout() {
                 <Palmtree className="w-5 h-5 text-white" />
               </div>
               <div>
-                <h1 className="font-heading font-bold text-lg text-stone-800 tracking-tight">المنتجع</h1>
-                <p className="text-[11px] text-stone-400 font-medium">نظام إدارة العملاء</p>
+                <h1 className="font-heading font-bold text-lg text-stone-800 tracking-tight">رحائل</h1>
+                <p className="text-[11px] text-amber-500 font-semibold tracking-wide">للمنتجعات السياحية</p>
               </div>
             </div>
           </div>

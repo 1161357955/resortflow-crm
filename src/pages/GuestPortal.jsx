@@ -114,7 +114,7 @@ export default function GuestPortal() {
             <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-amber-400 to-amber-600 flex items-center justify-center">
               <Palmtree className="w-4 h-4 text-white" />
             </div>
-            <span className="text-white font-bold text-lg tracking-tight">ResortFlow</span>
+            <span className="text-white font-bold text-lg tracking-tight">رحائل</span>
           </div>
           <div className="hidden md:flex items-center gap-6 text-sm text-white/80">
             <button onClick={() => setActiveTab("home")} className={`hover:text-white transition-colors ${activeTab === "home" ? "text-amber-400" : ""}`}>الرئيسية</button>
@@ -145,7 +145,7 @@ export default function GuestPortal() {
         <div className="relative z-10 text-center px-6 max-w-4xl mx-auto">
           <div className="inline-flex items-center gap-2 bg-amber-500/20 border border-amber-400/30 rounded-full px-4 py-1.5 text-amber-300 text-sm mb-6 backdrop-blur-sm">
             <Star className="w-3.5 h-3.5 fill-amber-400 text-amber-400" />
-            منتجعات سياحية سعودية فاخرة
+            رحائل للمنتجعات السياحية السعودية
           </div>
           <h1 className="text-5xl md:text-7xl font-heading font-bold text-white mb-6 leading-tight">
             اكتشف <span className="text-amber-400">جمال</span><br />المملكة
@@ -307,7 +307,7 @@ export default function GuestPortal() {
             <div className="w-14 h-14 rounded-2xl bg-gradient-to-br from-amber-400 to-amber-600 flex items-center justify-center mx-auto mb-4 shadow-2xl shadow-amber-500/30">
               <Palmtree className="w-7 h-7 text-white" />
             </div>
-            <h3 className="text-white font-bold text-xl mb-2">بوابة الإدارة</h3>
+            <h3 className="text-white font-bold text-xl mb-2">رحائل — بوابة الإدارة</h3>
             <p className="text-stone-400 text-sm mb-6">للموظفين وإدارة المنتجع فقط</p>
             <Link to="/login">
               <Button className="w-full bg-amber-500 hover:bg-amber-600 text-white rounded-xl h-11 font-medium">
@@ -325,7 +325,7 @@ export default function GuestPortal() {
       {/* FOOTER */}
       <div className="bg-black py-6 px-6 text-center">
         <p className="text-stone-600 text-sm">
-          © 2026 ResortFlow — جميع الحقوق محفوظة | <span className="text-amber-600">المملكة العربية السعودية 🇸🇦</span>
+          © 2026 رحائل للمنتجعات — جميع الحقوق محفوظة | <span className="text-amber-500">المملكة العربية السعودية 🇸🇦</span>
         </p>
       </div>
 
