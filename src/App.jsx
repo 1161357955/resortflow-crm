@@ -17,6 +17,7 @@ import Guests from '@/pages/Guests';
 import Units from '@/pages/Units';
 import Reservations from '@/pages/Reservations';
 import Calls from '@/pages/Calls';
+import GuestPortal from '@/pages/GuestPortal';
 
 const AuthenticatedApp = () => {
   const { isLoadingAuth, isLoadingPublicSettings, authError, navigateToLogin } = useAuth();
@@ -44,6 +45,7 @@ const AuthenticatedApp = () => {
   // Render the main app
   return (
     <Routes>
+      <Route path="/portal" element={<GuestPortal />} />
       <Route path="/login" element={<Login />} />
       <Route path="/register" element={<Register />} />
       <Route path="/forgot-password" element={<ForgotPassword />} />
